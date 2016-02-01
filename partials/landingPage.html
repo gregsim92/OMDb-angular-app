@@ -2,12 +2,25 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>landing</title>
+	<title>landingPage Movie Search</title>
 </head>
 <body>
-	<div ng-repeat="movie in data">
-		<h1>{{movie.Title}}</h1>
-		<img src="{{movie.Poster}}" alt="{{movie.title}}">
+	<div class="container">
+		<h1>Angular OMDB API Search</h1>
+		<h3>Enter a movie by title.</h3>
+		<input type="text" placeholder="movie title" ng-model='title' >
+		<br/>
+		<br/>
+		<button type="button" class="btn btn-primary" ng-click='movieSearch()'>Submit<span class="glyphicon glyphicon-arrow-right"></span> </button>
+		<div ng-repeat="movie in data">
+			<a href="/#/{{movie.imdbID}}/result">
+			<div>
+				<h5>{{movie.Title}}</h5>
+				<p>{{movie.Year}}</p>
+			</div>
+			</a>
+			
+		</div>
 	</div>
 </body>
 </html>
