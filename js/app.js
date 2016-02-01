@@ -6,4 +6,8 @@ var app = angular.module('movieApp', ['ngRoute']);
 			templateUrl: "partials/landingPage.html",
 			controller: 'mainController'
 		})
+		.when('/:movieId/result', {
+			templateUrl: "partials/result.html",
+			controller: 'mainController'
+		})
 	});
