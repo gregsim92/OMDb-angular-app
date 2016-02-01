@@ -11,7 +11,7 @@
 		<input type="text" placeholder="movie title" ng-model='title' >
 		<br/>
 		<br/>
-		<button type="button" class="btn btn-primary" ng-click='movieSearch()'>Submit</button>
+		<button type="button" class="btn btn-primary" ng-click='movieSearch()'>Submit<span class="glyphicon glyphicon-arrow-right"></span> </button>
 		<div ng-repeat="movie in data">
 			<a href="/#/{{movie.imdbID}}/result">
 			<div>
