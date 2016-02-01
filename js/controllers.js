@@ -8,4 +8,12 @@ app.controller('mainController', function($scope,$http){
 		})
 }
 
+	$scope.update = function(movie){
+		$scope.search = movie.title;
+	};
+
+	$scope.select = function(){
+		this.setSelectionRange(0, this.value.length);
+	}
 })
+
