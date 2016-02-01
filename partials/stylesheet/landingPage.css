@@ -1,0 +1,23 @@
+.container{
+	margin-left: 35%;
+	padding-top: 5%;
+}
+
+h4{
+	margin-left: 8%;
+}
+
+input{
+	margin-left: 9%;
+}
+button{
+	margin-left: 12%;
+}
+.container2 {
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	width: 50%;
+	margin-top: 3%;
+	margin-left: 25%;
+}

@@ -2,18 +2,22 @@
 <html lang="en">
 <head>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="stylesheet/landingPage.css">
 	<meta charset="UTF-8">
 	<title>landingPage Movie Search</title>
 </head>
 <body>
 	<div class="container">
-		<h1>Angular OMDB API Search</h1>
+		<h2>Angular OMDB API Search</h2>
+		<br/>
+		<h4>Enter a movie by title.</h4>
+		<input type="text" placeholder="movie title">
+		<br/>
+		<br/>
+		<button type="button" class="btn btn-primary">Search! <span class="glyphicon glyphicon-arrow-right"></span> </button>
+	</div>
+	<div class="container2">
 		<p>{{data}}</p>
-		<h3>Enter a movie by title.</h3>
-		<input type="text" value="movie title">
-		<br/>
-		<br/>
-		<button type="button" class="btn btn-primary">Submit</button>
 	</div>
 </body>
 </html>
