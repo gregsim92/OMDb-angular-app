@@ -5,6 +5,9 @@
 	<title>landing</title>
 </head>
 <body>
-	<p>{{data}}</p>
+	<div ng-repeat="movie in data">
+		<h1>{{movie.Title}}</h1>
+		<img src="{{movie.Poster}}" alt="{{movie.title}}">
+	</div>
 </body>
 </html>
