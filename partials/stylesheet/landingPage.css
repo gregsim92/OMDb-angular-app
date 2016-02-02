@@ -21,3 +21,17 @@ button{
 	margin-top: 3%;
 	margin-left: 25%;
 }
+
+#resultPoster {
+	float: left;
+	display: inline-block;
+}
+
+.resultHead {
+text-align: center;
+}
+
+.resultSpace {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}

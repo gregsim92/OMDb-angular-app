@@ -8,6 +8,6 @@ var app = angular.module('movieApp', ['ngRoute']);
 		})
 		.when('/:movieId/result', {
 			templateUrl: "partials/result.html",
-			controller: 'mainController'
+			controller: 'secondController'
 		})
 	});
