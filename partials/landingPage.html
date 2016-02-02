@@ -7,13 +7,12 @@
 		<br/>
 		<button type="button" class="btn btn-primary" ng-click='movieSearch()'>Submit<span class="glyphicon glyphicon-arrow-right"></span> </button>
 		<div ng-repeat="movie in data">
-			<a href="/#/{{movie.imdbID}}/result">
-			<div class="container2">
-				<div class="box">
-					<h5>{{movie.Title}}</h5>
-					<p>{{movie.Year}}</p>
-				</div>
+
+			<div ng-click="movieResult(movie.imdbID)">
+				<h5>{{movie.Title}}</h5>
+				<p>{{movie.Year}}</p>
 			</div>
-			</a>		
+			</a>
+
 		</div>
 	</div>

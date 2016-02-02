@@ -15,6 +15,42 @@
 				{{ movie.Year }}
 			</li>
 		</ul>		
+
+	<div class="container">
+		<h1>Angular OMDB API Search</h1>
+		<h3>Enter a movie by title.</h3>
+		<input type="text" placeholder="movie title" ng-model='title' >
+		<br/>
+		<br/>
+		<button type="button" class="btn btn-primary" ng-click='movieSearch()'>Submit<span class="glyphicon glyphicon-arrow-right"></span> </button>
+	</div>
+	<div class="container-fluid">
+		<div class='resultHead'>
+						
+		</div>
+	
+		<div class= 'col-md-3' id='resultPoster'>
+			<img src="{{result.Poster}}" alt="Movie Poster">
+		</div>
+		<div class = 'col-md-7'>
+			<h2><strong>{{result.Title}}</strong></h2>
+			<h5><strong>Released:</strong> {{result.Year}}</h5>
+			<h6><strong>Runtime:</strong> {{result.Runtime}}</h6>
+			<div class="resultSpace">
+				<p>{{result.Plot}}</p>
+			</div>
+			<h6><strong>Directed by:</strong> {{result.Director}}</h6>
+			<h6><strong>Actors:</strong> {{result.Actors}}</h6>
+			<h6><strong>Rated:</strong> {{result.Rated}}</h6>
+			
+			<div class="resultSpace">
+				<h6><strong>Metascore:</strong> {{result.Metascore}}</h6>
+				<h6><strong>IMDb:</strong> {{result.imdbRating}}</h6>
+			</div>
+			
+			
+		</div>
+		
 	</div>
 </body>
 </html>
