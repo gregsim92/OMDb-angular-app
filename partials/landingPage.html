@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>landingPage Movie Search</title>
-</head>
-<body>
+
 	<div class="container">
 		<h1>Angular OMDB API Search</h1>
 		<h3>Enter a movie by title.</h3>
@@ -15,11 +9,11 @@
 		<div ng-repeat="movie in data">
 			<a href="/#/{{movie.imdbID}}/result">
 			<div class="container2">
-				<h5>{{movie.Title}}</h5>
-				<p>{{movie.Year}}</p>
+				<div class="box">
+					<h5>{{movie.Title}}</h5>
+					<p>{{movie.Year}}</p>
+				</div>
 			</div>
 			</a>		
 		</div>
 	</div>
-</body>
-</html>

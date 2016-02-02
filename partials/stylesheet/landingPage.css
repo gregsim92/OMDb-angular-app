@@ -1,23 +1,24 @@
+
 .container{
 	margin-left: 35%;
 	padding-top: 5%;
 }
 
-h4{
-	margin-left: 8%;
+h3{
+	margin-left: 9%;
 }
 
 input{
-	margin-left: 9%;
+	margin-left: 13%;
 }
 button{
-	margin-left: 12%;
+	margin-left: 16%;
 }
 .container2 {
 	border-style: solid;
 	border-color: black;
 	border-width: 2px;
-	width: 50%;
+	width: 39%;
 	margin-top: 3%;
-	margin-left: 25%;
+	background-color: #e5f2ff;
 }
